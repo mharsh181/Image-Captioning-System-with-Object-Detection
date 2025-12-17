@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code
+.vscode/
+
+# Dataset and Models (Too large for GitHub)
+data/Images/
+models/*.keras
+models/*.pkl
+models/features.pkl
+models/tokenizer.pkl
+models/objects.pkl
+
+# Virtual Environment
+venv/
+env/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
