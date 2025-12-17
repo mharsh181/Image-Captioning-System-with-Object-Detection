@@ -42,10 +42,6 @@ Here you can see the model in action through the CustomTkinter GUI.
 *(Place a screenshot showing an image and its generated caption here)*
 ![Prediction Example](docs/screenshots/prediction_example.png)
 
-### 3. Object Detection Visualization
-*(Optional: Show the YOLOv8 bounding boxes if your UI supports it, or a terminal output)*
-![Object Detection](docs/screenshots/object_detection.png)
-
 > **Note:** Screenshots are located in the `docs/screenshots/` folder.
 
 ---
