@@ -1,10 +1,21 @@
-# Image Captioning System with Object Detection
+# 👁️ Image Captioning System with Object Detection
 
-**Minor Project (3rd Semester)**
-**Author:** Harsh Mishra
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![YOLOv8](https://img.shields.io/badge/YOLO-v8-green)
+![Status](https://img.shields.io/badge/Status-Minor_Project-purple)
 
-## Overview
-3 
+> **"A picture is worth a thousand words, but this AI tells you the right ones."**
+
+**Author:** Harsh Mishra  
+**Context:** Minor Project (3rd Semester)
+
+---
+## 📖 Overview
+
+Bridging the gap between Computer Vision and Natural Language Processing (NLP), this project creates an intelligent system capable of "seeing" an image and describing it in natural language.
+
+Unlike standard captioning models that rely solely on visual features, this system utilizes a **Dual-Input Architecture**. It combines the deep visual understanding of **VGG16** with the semantic object recognition of **YOLOv8**. This hybrid approach ensures that the generated captions are not just grammatically correct, but contextually rich and accurate.
 
 To improve accuracy and context, the system integrates:
 *   **VGG16**: For extracting visual features from images.
@@ -16,6 +27,28 @@ To improve accuracy and context, the system integrates:
 *   **Object Detection**: Uses YOLOv8 to identify 80+ object classes.
 *   **Beam Search Inference**: Toggle between fast (Greedy) and accurate (Beam Search) caption generation.
 *   **Modern GUI**: Built with `customtkinter` for a sleek, dark-mode user interface.
+
+---
+
+## 📸 Project Screenshots
+
+Here you can see the model in action through the CustomTkinter GUI.
+
+### 1. The User Interface
+*(Place a screenshot of your main GUI window here)*
+![Main GUI Interface](docs/screenshots/gui_main.png)
+
+### 2. Caption Generation Results
+*(Place a screenshot showing an image and its generated caption here)*
+![Prediction Example](docs/screenshots/prediction_example.png)
+
+### 3. Object Detection Visualization
+*(Optional: Show the YOLOv8 bounding boxes if your UI supports it, or a terminal output)*
+![Object Detection](docs/screenshots/object_detection.png)
+
+> **Note:** Screenshots are located in the `docs/screenshots/` folder.
+
+---
 
 ## Installation
 
@@ -52,14 +85,29 @@ To re-run object detection on all images:
 ```bash
 python src/object_extractor.py
 ```
+## 📂 Project Structure
 
-## Project Structure
-*   `data/`: Images and captions.
-*   `models/`: Saved models (`.keras`) and pickle files (`tokenizer.pkl`, `features.pkl`, `objects.pkl`).
-*   `src/`: Source code for training, data loading, and inference.
-*   `gui/`: Application code (`app.py`).
-*   `docs/`: Project documentation and reports.
+The project is organized into modular directories for better maintainability:
 
+```text
+├── data/                  # Dataset storage (Input)
+│   ├── Images/            # Source images (Flickr8k)
+│   └── captions.txt       # Caption text data
+├── models/                # Serialized models and binary files
+│   ├── model_final.keras  # The trained deep learning model (VGG16 + LSTM)
+│   ├── tokenizer.pkl      # Tokenizer object for text processing
+│   ├── features.pkl       # Extracted visual features (VGG16)
+│   └── objects.pkl        # Detected object tags (YOLOv8)
+├── src/                   # Source code for backend logic
+│   ├── train.py           # Main training script
+│   ├── object_extractor.py# Script to run YOLOv8 object detection
+│   └── utils.py           # Helper functions for data loading
+├── gui/                   # Frontend Application
+│   └── app.py             # Main executable for the Interface
+├── docs/                  # Documentation assets
+│   └── screenshots/       # Images used in this README
+└── README.md              # Project documentation
+```
 ## Credits
 Developed by **Harsh Mishra**.
 Based on the Flickr8k dataset.
