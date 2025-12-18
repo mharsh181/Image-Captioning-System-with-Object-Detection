@@ -35,11 +35,11 @@ To improve accuracy and context, the system integrates:
 Here you can see the model in action through the CustomTkinter GUI.
 
 ### 1. The User Interface
-*(Place a screenshot of your main GUI window here)*
+
 ![Main GUI Interface](docs/gui_main.png)
 
 ### 2. Caption Generation Results
-*(Place a screenshot showing an image and its generated caption here)*
+
 ![Prediction Example](docs/prediction_example.png)
 
 > **Note:** Screenshots are located in the `docs/screenshots/` folder.
