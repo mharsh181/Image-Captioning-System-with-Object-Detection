@@ -42,6 +42,10 @@ Here you can see the model in action through the CustomTkinter GUI.
 
 ![Prediction Example](docs/prediction_example.png)
 
+### 3. Demonstration Video
+
+![Demonstration Video](sample.mp4)
+
 > **Note:** Screenshots are located in the `docs/screenshots/` folder.
 
 ---
